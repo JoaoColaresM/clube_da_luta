@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body, .divisao {
+    background-color: #252326;
+}
+
+.divisao {
+    width: 100%;
+    height: 80px;
+}
+
+.barra_navegacao nav {
+    display: flex;
+    flex-direction: column;
+    width: 55px;
+    background-color: #a4a4a480;
+    margin-left: 10px;
+    padding: 10px 10px 30px 10px;
+    border: none;
+    border-radius: 20px;
+    position: fixed;
+    top: 35vh;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.barra_navegacao nav:hover {
+    width: 180px;
+}
+
+.barra_navegacao nav i {
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #bd0d70;
+}
+
+.barra_navegacao nav ul li {
+    margin-top: 16px;
+}
+
+.barra_navegacao nav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barra_navegacao nav ul li a:hover {
+    background-color: #338E7C;
+    padding: 0 4px;
+    border: none;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+.txt {
+    margin-left: 14px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+
+
+.secao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.faixa_fundo_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    background-color: #338E7C;
+}
+
+.cartaz_1, .cartaz_2, .cartaz_3 {
+    height: 100vh;
+    width:inherit;
+    margin-left: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cartaz_1 {
+    background-image: url(./imagens/cartaz_02.jpg);
+}
+
+.cartaz_2 {
+    background-image: url(./imagens/cartaz_01.jpg);
+    background-position-x: right ;
+    margin: 0 80px 0 0;
+}
+
+.cartaz_3 {
+    background-image: url(./imagens/cartaz_03.jpg);
+}
+
+.inf_secao_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    margin-right: 80px;
+    max-width: 30vw;
+}
+
+.inf_secao_1 h1 {
+    color: #fdfe64;
+    font-size: 48px;
+    padding: 12px 6px;
+    border: 2px solid #fdfe64;
+    margin-bottom: 16px;
+    width: fit-content;
+    box-shadow: 0 0 15px #fdfe64, inset 0 0 15px #fdfe64;
+    text-shadow: 0 0 15px #fdfe64;
+    
+}
+.inf_secao_1 h2 {
+    color: #252326;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.inf_secao_1 p {
+    color: #252326;
+    font-size: 18px;
+    
+}
+
+.inf_secao_1 p strong {
+    color: #fdfe64;
+}
+
+
+
+
+.artistas {
+    max-width: 40%;
+    height: 90%;
+    margin-left: 80px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 55%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.artista {
+    background: #fdfe64;
+    border: none;
+    border-radius: 10px;
+    color: #252326;
+    font-weight: bold;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diretor {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+
+.foto {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    align-items: center;
+    background-color: #fdfe64;
+}
+
+.artista {
+    cursor: pointer;
+    text-align: center;
+}
+
+.artista p span {
+    color: #bd0d70;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.foto1 {
+    background-image: url(./imagens/brad2.jpg);
+}
+
+.foto2 {
+    background-image: url(./imagens/edward2.jpg);
+}
+
+.foto3 {
+    background-image: url(./imagens/marla.jpg);
+}
+
+.foto4 {
+    background-image: url(./imagens/david.jpg);
+}
+
+.foto5 {
+    background-image: url(./imagens/chuck.jpg);
+}
+
+.visivel {
+    display: flex;
+    transition: .2s ease-in-out;
+}
+
+.video {
+    margin-right: 80px;
+}

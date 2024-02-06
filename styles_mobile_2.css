@@ -1,0 +1,19 @@
+@media (max-width: 395px ) {
+    .barra_navegacao nav i {
+        font-size: 24px;
+    }
+    
+    .txt {
+        margin-left: 5px;
+    }
+
+    .artistas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .foto {
+        grid-column: 1 / span 2;
+        grid-row: 4;        
+    }
+}

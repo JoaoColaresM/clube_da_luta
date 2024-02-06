@@ -1,0 +1,86 @@
+@media (max-width: 811px) {
+    .barra_navegacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .barra_navegacao nav {
+        top: 0;
+        left: auto;
+        flex-direction: row;
+        background-color: #a4a4a480;
+        width: 100%;
+        max-width: 95%;
+        margin: 5px 0 0 0;
+        padding: 10px;
+    }
+
+    .barra_navegacao nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .barra_navegacao nav ul li {
+        margin-top: 0px;
+    }
+
+    .secao {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .faixa_fundo_1 {
+        height: 100%;
+        margin: 10% 0;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cartaz_1, .cartaz_2, .cartaz_3 {
+        background-position-x: center;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .inf_secao_1 {
+        align-items: center;
+        text-align: center;
+        margin: 0px 10%;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .artistas {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 10%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .diretor {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .foto {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+
+    .foto1, .foto2, .foto3, .foto4, .foto5 {
+        display: flex;
+    }
+
+    .video {
+        margin: 0 10%;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+}
